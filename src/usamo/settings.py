@@ -98,11 +98,11 @@ WSGI_APPLICATION = 'usamo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'usamo_test',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'PASSWORD': 'postgres',  # remove if password not set
+        'HOST': 'db',
+        'PORT': 5432,
     }
 }
 
