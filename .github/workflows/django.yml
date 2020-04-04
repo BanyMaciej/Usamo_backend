@@ -13,7 +13,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.6, 3.7, 3.8]
+        python-version: [3.7]
 
     steps:
     - uses: actions/checkout@v2
@@ -27,4 +27,4 @@ jobs:
         pip install -r src/requirements.txt
     - name: Run Tests
       run: |
-        python manage.py test
+        python src/manage.py test
